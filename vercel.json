@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd gilded-gems-listings && npm run build",
+  "outputDirectory": "gilded-gems-listings/dist",
+  "installCommand": "cd gilded-gems-listings && npm install",
+  "framework": "vite"
+}
+
