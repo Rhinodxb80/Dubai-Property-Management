@@ -8,6 +8,7 @@ import PropertyDetail from "./pages/PropertyDetail";
 import PropertyDetailEnhanced from "./pages/PropertyDetailEnhanced";
 import Admin from "./pages/Admin";
 import AdminEdit from "./pages/AdminEdit";
+import AdminEditSupabase from "./pages/AdminEditSupabase";
 import AdminPropertyDetail from "./pages/AdminPropertyDetail";
 import InterestForm from "./pages/InterestForm";
 import UploadDocuments from "./pages/UploadDocuments";
@@ -26,7 +27,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/admin/edit/:id" element={<AdminEdit />} />
+          <Route path="/admin/edit/:id" element={<AdminEditSupabase />} />
+          <Route path="/admin/edit-legacy/:id" element={<AdminEdit />} />
           <Route path="/admin/view/:id" element={<AdminPropertyDetail />} />
           <Route path="/interest-form" element={<InterestForm />} />
           <Route path="/upload-documents" element={<UploadDocuments />} />
